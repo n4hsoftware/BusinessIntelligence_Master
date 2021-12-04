@@ -14,7 +14,8 @@
 				          <configuration>
 						  <target name="runbuild">
 							  <ant file="BusinessIntelligence_Master/BusinessIntelligence/build.xml"/>		  
-                                                  </target>
+						  </target>
+				          </configuration>			  
 					</execution>
 				</executions>
 			</plugin>		
