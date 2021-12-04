@@ -6,10 +6,10 @@
 	<version>1</version> 
 	<build>
 		<plugins>
+			<plugin>
 			<groupId>BusinessIntelligence</groupId>  
 			<artifactId>artf1</artifactId>  
 			<version>1</version> 
-			<plugin>
 				<executions>
 					<execution>
 						<id>1</id>
