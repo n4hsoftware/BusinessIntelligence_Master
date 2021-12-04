@@ -2,20 +2,23 @@
 	<modelVersion>4.0.0</modelVersion>  
 	<name>N4hsOFTWARE</name>
 	<groupId>BusinessIntelligence</groupId>  
-	<artifactId>artf00001</artifactId>  
+	<artifactId>artf1</artifactId>  
 	<version>1</version> 
 	<build>
 		<plugins>
+			<groupId>BusinessIntelligence</groupId>  
+			<artifactId>artf1</artifactId>  
+			<version>1</version> 
 			<plugin>
 				<executions>
 					<execution>
-					  <id>1</id>
-				          <phase>build</phase>
-				          <configuration>
-						  <target name="runbuild">
-							  <ant file="BusinessIntelligence_Master/BusinessIntelligence/build.xml"/>		  
-						  </target>
-				          </configuration>			  
+						<id>1</id>
+						<phase>build</phase>
+						<configuration>
+							<target name="runbuild">
+								<ant file="BusinessIntelligence_Master/BusinessIntelligence/build.xml"/>		  
+							</target>
+						</configuration>			  
 					</execution>
 				</executions>
 			</plugin>		
