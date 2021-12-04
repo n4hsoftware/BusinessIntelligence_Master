@@ -16,5 +16,5 @@ force: clean all
 
 SEARCHPATH +=	-I ./inc/
 
-LOCALFLAGS += -o bin/OMSRun
+LOCALFLAGS += -o bin/BIRun
 
