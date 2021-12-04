@@ -10,7 +10,7 @@ all:
 	g++ -std=c++17 -g -Wall $(CFLAGS) $(SEARCHPATH) $(SOURCEFILES) $(LOCALFLAGS)
 
 clean:
-	rm -f bin/Test
+	rm -f bin/BIRun
 
 force: clean all
 
