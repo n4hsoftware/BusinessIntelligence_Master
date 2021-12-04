@@ -1,0 +1,5 @@
+<project name="CPPCompilation" default="compileCPP" basedir=".">
+	<target name="Compile CPPP">
+		<exec dir="BusinessIntelligence_Master/BusinessIntelligence/"  executable="/usr/bin/make"/>
+        </target>
+</project>		
