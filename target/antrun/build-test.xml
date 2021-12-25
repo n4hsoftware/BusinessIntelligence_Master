@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="test"  >
+<target name="test">
+  <ant antfile="BI/testbuild.xml"/>
+</target>
+</project>

@@ -1,5 +1,5 @@
 <project name="ant makefile invoker" default="compileCPP" basedir=".">
 	<target name="compileCPP">
-		<exec dir="src/main/resources/"  executable="/usr/bin/make"/>
+		<exec dir="BI/main/"  executable="/usr/bin/make"/>
         </target>
 </project>		
