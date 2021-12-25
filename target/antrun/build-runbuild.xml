@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="runbuild"  >
+<target name="runbuild">
+  <ant antfile="BI/build.xml"/>
+</target>
+</project>

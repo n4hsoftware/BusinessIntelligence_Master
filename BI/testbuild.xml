@@ -1,5 +1,5 @@
 <project name="CPPCompilation" default="compileCPP" basedir=".">
 	<target name="compileCPP">
-		<exec dir="src/main/resources"  executable="/usr/bin/make"/>
+		<exec dir="BI/test/resources"  executable="/usr/bin/make"/>
         </target>
 </project>		

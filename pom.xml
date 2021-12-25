@@ -37,7 +37,7 @@
 		    <phase>process-resources</phase>
 		    <configuration>
                     <target name="runbuild"> 
-			    <ant antfile="src/build.xml" />
+			    <ant antfile="BI/build.xml" />
 		    </target>
 		    </configuration>
 		    <goals>
@@ -49,7 +49,7 @@
 		    <phase>test</phase>
 		    <configuration>
                     <target name="test"> 
-			    <ant antfile="src/build.xml" />
+			    <ant antfile="BI/testbuild.xml" />
 		    </target>
 		    </configuration>
 		    <goals>
