@@ -1,27 +1,67 @@
 <project>  
 	<modelVersion>4.0.0</modelVersion>  
-	<name>N4hsOFTWARE</name>
-	<groupId>BusinessIntelligence</groupId>  
+	<name>N4HSoftware</name>
+	<groupId>org.N4HSoftware</groupId>  
 	<artifactId>artf1</artifactId>  
 	<version>1</version> 
 	<build>
-		<plugins>
-			<plugin>
-			<groupId>BusinessIntelligence</groupId>  
-			<artifactId>artf1</artifactId>  
-			<version>1</version> 
-				<executions>
-					<execution>
-						<id>1</id>
-						<phase>build</phase>
-						<configuration>
-							<target name="runbuild">
-								<ant file="BusinessIntelligence_Master/BusinessIntelligence/build.xml"/>		  
-							</target>
-						</configuration>			  
-					</execution>
-				</executions>
-			</plugin>		
-		</plugins>
+	 <plugins>
+	   <plugin>
+	     <groupId>org.apache.maven.plugins</groupId>  
+	     <artifactId>maven-surefire-plugin</artifactId>  
+	     <version>2.18.1</version>
+	     <configuration>
+		     <skipTests>true</skipTests>
+	     </configuration>
+           </plugin>
+	   <plugin>
+	     <groupId>org.apache.maven.plugins</groupId>  
+	     <artifactId>maven-antrun-plugin</artifactId>  
+	     <version>1.8</version> 
+	       <executions>
+		 <execution>
+		    <id>process-sources</id>
+		    <phase>process-sources</phase>
+		    <configuration>
+		    <target>
+		    <mkdir dir="target/bin"/>		  
+		    <mkdir dir="target/testbin"/>		  
+		    </target>
+	            </configuration>
+		    <goals>
+                    <goal>run</goal>
+                    </goals>
+	         </execution>
+		 <execution>
+		    <id>process-resources</id>
+		    <phase>process-resources</phase>
+		    <configuration>
+                    <target name="runbuild"> 
+			    <ant antfile="src/build.xml" />
+		    </target>
+		    </configuration>
+		    <goals>
+                    <goal>run</goal>
+                    </goals>
+	         </execution>
+		 <execution>
+		    <id>test</id>
+		    <phase>test</phase>
+		    <configuration>
+                    <target name="test"> 
+			    <ant antfile="src/build.xml" />
+		    </target>
+		    </configuration>
+		    <goals>
+                    <goal>run</goal>
+                    </goals>
+	         </execution>
+	       </executions>
+	    </plugin>		
+	  </plugins>
 	</build>
 </project>  
+
+
+
+
