@@ -1,0 +1,2 @@
+abc.txt filter=lfs diff=lfs merge=lfs -text
+SampleTextFile_1000kb.txt filter=lfs diff=lfs merge=lfs -text
